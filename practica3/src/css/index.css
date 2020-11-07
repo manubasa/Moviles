@@ -1,0 +1,158 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:  #5d5d5d;
+}
+.error {
+    background-color: grey;
+    color: lightcoral;
+    border: 1px red solid;
+
+}
+
+
+.btn {
+    color: solid;
+    border-radius: 3px;
+
+}
+
+
+.btn-primario{
+    background-color: #17a2b8;
+    color: white;
+
+}
+
+.btn-secundario{
+    background-color: #ffc107;
+    color: black;
+
+}
+
+/*Estilos propios*/
+body{
+    background-color: gainsboro;
+}
+
+ol {
+    list-style-type: none;
+}
+
+.input-style{
+    padding: 4px;
+    border-radius: 2px;
+    border: 2px solid  #17a2b8;
+    margin-bottom: 4px;
+    background-color: #70abb4;
+    color: white;
+    width: 200px;
+    
+
+}.input-style::placeholder{
+ 
+    color: rgb(219, 219, 219);
+    
+
+}
+ 
+.container{
+    width: 50%;
+    border-radius: 2px;
+    box-shadow: slategrey 1px 1px 1px; 
+    border: 1px solid grey;
+    background-color: white; 
+    margin: auto;
+    margin-bottom: 8px;
+    padding: 8px; 
+}
+
+
+/*Estilos menu paso a paso*/
+ 
+    #pasos {
+    list-style-type:none;
+    margin:0 !important;
+    padding:0 !important;
+        
+    }
+    #pasos li {
+    height:50px;
+    text-align:center;
+    line-height:35px;
+    font-family:"Open Sans";
+    color:#fff;
+    background:#b0bec5;
+    text-decoration:none;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display:inline-block;
+    vertical-align: top;
+    margin: 0px !important;
+    margin-right: -1px !important;
+    margin-left: -1px !important;
+    margin-bottom: 2px !important;
+    min-width: 80px;
+    }
+    .active .li_paso {
+    color: #37474f;
+    }
+    #pasos li.active {
+    background-color: #37474f;
+    }
+    div.li_paso {
+    background: white;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: #b0bec5;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    width: 22px; 
+    height: 22px;
+    font-size: 16px;
+    }
+    .texto_paso {
+    margin-top: -14px;
+    }
+
+    #pasos li.li_btn{
+        background-color: white; 
+
+    }
+/*Movil primero*/
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+    /*Estilos de pasos*/
+
+    #paso1, #paso2, #paso3, #paso4{
+        text-align: center;
+        display: none;
+    }
+
+    #mensaje-error{
+        display: none;
+    }

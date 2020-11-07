@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container" id="navigation">
+        <div class="col-12">  
+        <ul id="pasos">
+            <li class="li_btn"><button class="btn btn-primario" onclick="clickAnt()">Atras</button></li>
+            <li id="li_n1" class="active"><div class="li_paso">1</div><div class="texto_paso">PASO</div></li>
+            <li id="li_n2"><div class="li_paso">2</div><div class="texto_paso">PASO</li>
+            <li id="li_n3"><div class="li_paso">3</div><div class="texto_paso">PASO</li>
+            <li id="li_n4"><div class="li_paso">4</div><div class="texto_paso">PASO</li>
+           
+        <li  class="li_btn"> <button class="btn btn-primario" id="btn-sig" onclick="clickSig()" disabled>Siguiente</button>
+        </li>
+
+            </ul> 
+        </div>
+    </div>
+    <div class="container" id="content">
+        <div class="col-12" id="paso1">  
+          
+            <h2>Pasos a seguir:</h2>
+            <ol>
+                <li>Introduce una url</li>
+                <li>Rellena el formulario</li>
+                <li>Confirma los datos introducidos</li>
+                <li>Mensaje de agradecimiento</li>
+            </ol>
+
+            <h1>PASO 1</h1>
+            <input type="text" class="input-style" id="input_url" placeholder="Introduce una URL" onchange="validarUrl()"/>
+             
+        </div>
+        <div class="col-12" id="paso2">  
+           
+            <h1>PASO 2</h1>
+            <form id="formulario">
+                <input type="text" class="input-style" id="nombre" placeholder="Introduce un nombre y apellidos"/><br>
+                <input type="date" class="input-style" id="fecha" placeholder="Introduce fecha nac." /><br>
+                <input type="text" class="input-style" id="direccion" placeholder="Introduce tú dirección"/><br>
+                <input type="text" class="input-style" id="cp" minlength="5" maxlength="5" placeholder="Introduce Codigo postal"/><br>
+                <select class="input-style" id="provincia">
+                    <option value="Valencia">Valencia</option>
+                    <option value="Alicante">Alicante</option>
+                    <option value="Castellon">Castellon</option>
+                    
+               
+                </select><br>
+                <input type="text" class="input-style" id="municipio" placeholder="Introduce Municipio"/><br>
+
+                <button type="button" id="btn_form" class="btn btn-secundario" onclick="guardarFormulario()">Guardar</button>
+            </form>
+            <div id="mensaje-error" class="error">
+                
+            </div>
+        </div>
+        <div class="col-12" id="paso3">  
+           
+            <h1>PASO 3</h1>
+            <p id="mostrar_nombre"></p>
+            <p id="mostrar_fecha"></p>
+            <p id="mostrar_dir"></p>
+            <p id="mostrar_cp"></p>
+            <p id="mostrar_provincia"></p>
+            <p id="mostrar_municipio"></p>
+            <p><strong>Para confirmar pulsa Siguiente</strong></p>
+        </div>
+        <div class="col-12" id="paso4">  
+           
+            <h1>PASO 4</h1>
+            <p><strong>Se ha enviado correctamente. Gracias por usar la app.</strong></p>
+        </div>
+    </div>
+    
+    <script src="js/index.js">
+     
+    </script>
+</body>
+</html>
